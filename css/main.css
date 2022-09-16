@@ -110,6 +110,7 @@ aside {
 header nav {
   display: flex;
   flex-flow: row wrap;
+  width: 60%;
 }
 
 header nav ul {
@@ -131,7 +132,7 @@ header nav ul {
   display: flex;
   flex-flow: row wrap;
 }
-
+/** FAQ **/
 .faq {
   display: flex;
   flex-flow: row wrap;
@@ -142,6 +143,8 @@ header nav ul {
   flex-flow: row wrap;
 }
 
+/**Footer**/
+
 .contact-section {
   display: flex;
   flex-flow: row wrap;
@@ -149,6 +152,11 @@ header nav ul {
 
 footer .social-icons {
   display: flex;
+}
+
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
 }
 
 /* ==========================================================================
