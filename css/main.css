@@ -13,7 +13,7 @@
 
 html {
   color: #222;
-  font-size: 1em;
+  font-size: 16px;
   line-height: 1.4;
 }
 
@@ -86,6 +86,28 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+}
+
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+}
 
 header,
 footer {
@@ -153,6 +175,7 @@ header nav ul {
 
 .reviews h3 {
   /* width: */
+  font-family: "Poppins", sans-serif;
 }
 
 .mission {
@@ -407,6 +430,7 @@ footer p {
   }
 
   .faq h2 {
+    font-family: "Poppins", sans-serif;
     width: 100%;
   }
 }
