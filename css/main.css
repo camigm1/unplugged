@@ -100,11 +100,16 @@ header .content-wrapper {
   justify-content: space-between;
   align-items: center;
   flex-flow: row-wrap;
+  margin: 0;
 }
 
 aside {
   display: flex;
   flex-flow: row wrap;
+}
+
+header {
+  padding: 15px 0;
 }
 
 header nav {
@@ -116,6 +121,11 @@ header nav {
 header nav ul {
   display: flex;
   justify-content: space-between;
+  width: 50%;
+}
+
+.header-divider {
+  width: 30%;
 }
 
 .features .features-item-description {
@@ -123,14 +133,30 @@ header nav ul {
   flex-flow: row wrap;
 }
 
+.features article {
+  /* width:  */
+}
+
+.features p {
+  margin: 0;
+}
+
 .reviews .content-wrap {
   display: flex;
   flex-flow: row wrap;
 }
 
+.reviews h3 {
+  /* width: */
+}
+
 .mission {
   display: flex;
   flex-flow: row wrap;
+}
+
+.content-wrapper {
+  width: 90%;
 }
 /** FAQ **/
 .faq {
@@ -157,6 +183,10 @@ footer .social-icons {
 footer .content-wrapper {
   width: 55%;
   margin: 50px 0;
+}
+
+footer p {
+  margin: 0;
 }
 
 /* ==========================================================================
