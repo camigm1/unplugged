@@ -96,8 +96,16 @@ a {
   text-decoration: none;
 }
 
+.hero-img {
+  display: block;
+  width: 75%;
+  margin: 0 auto;
+}
+
 li {
   list-style: none;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 h2 {
@@ -120,6 +128,13 @@ footer {
 .hero {
   display: flex;
   flex-flow: row wrap;
+  background-image: url("/Assets/jake-melara-30679-unsplash.jpg");
+  color: white;
+  min-height: 90vh;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 header .content-wrapper {
@@ -133,16 +148,20 @@ header .content-wrapper {
 aside {
   display: flex;
   flex-flow: row wrap;
+  background-color: #527158;
+  color: white;
 }
 
 header {
   padding: 15px 0;
+  background-color: #202322;
 }
 
 header nav {
   display: flex;
   flex-flow: row wrap;
-  width: 60%;
+  margin: 0 auto;
+  width: 100%;
 }
 
 aside .form {
@@ -181,6 +200,9 @@ header nav ul {
   width: 30%;
 }
 
+.features {
+  background-image: url("/Assets/rawpixel-800820-unsplash1.jpg");
+}
 .features .features-item-description {
   display: flex;
   flex-flow: row wrap;
@@ -192,6 +214,10 @@ header nav ul {
 
 .features p {
   margin: 0;
+}
+
+.reviews {
+  background-image: url();
 }
 
 .reviews .content-wrap {
