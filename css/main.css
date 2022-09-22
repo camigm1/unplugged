@@ -214,6 +214,10 @@ header nav ul {
 
 .features {
   background-image: url("/Assets/rawpixel-800820-unsplash1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
 }
 .features .features-item-description {
   display: flex;
