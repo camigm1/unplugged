@@ -224,6 +224,12 @@ header nav ul {
   flex-flow: row wrap;
 }
 
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
 .features article {
   /* width:  */
 }
