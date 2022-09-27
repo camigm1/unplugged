@@ -211,6 +211,18 @@ header nav ul {
 .header-divider {
   width: 30%;
 }
+.social-icons {
+  flex-direction: column;
+}
+.social-icons p {
+  display: flex;
+  background-color: #527158;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
 
 .features {
   background-image: url("/Assets/rawpixel-800820-unsplash1.jpg");
