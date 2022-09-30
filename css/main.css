@@ -128,7 +128,7 @@ footer {
 .hero {
   display: flex;
   flex-flow: row wrap;
-  background-image: url("/Assets/jake-melara-30679-unsplash.jpg");
+  background-image: url("../Assets/jake-melara-30679-unsplash.jpg");
   color: white;
   min-height: 90vh;
   color: #fff;
