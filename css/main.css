@@ -205,29 +205,12 @@ input[type="button"] {
 
 header nav ul {
   display: flex;
-  justify-content: space-between;
-  width: 50%;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .header-divider {
   width: 30%;
-}
-.social-icons {
-  flex-direction: column;
-}
-.social-icons p {
-  display: flex;
-  background-color: #527158;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-}
-
-.icons {
-  display: flex;
-  gap: 3px;
 }
 
 .features {
@@ -294,6 +277,8 @@ figure {
 .mission {
   display: flex;
   flex-flow: row wrap;
+  background-color: #527158;
+  color: white;
 }
 
 .map figure {
@@ -317,8 +302,14 @@ figure {
 } */
 /** FAQ **/
 .faq {
+  background-color: #527158;
   display: flex;
   flex-flow: row wrap;
+  color: white;
+}
+
+.faq-content p {
+  padding-bottom: 5%;
 }
 
 .faq .content-wrapper {
@@ -328,16 +319,16 @@ figure {
 
 /**Footer**/
 footer {
+  text-align: center;
   background-color: #202322;
   color: white;
 }
-.contact-section {
-  display: flex;
-  flex-flow: row wrap;
-}
 
-footer .social-icons {
+footer .icons {
+  width: 100%;
+  text-align: center;
   display: flex;
+  margin: 0 auto;
 }
 
 footer .content-wrapper {
@@ -347,6 +338,37 @@ footer .content-wrapper {
 
 footer p {
   margin: 0;
+}
+
+.social-icons p {
+  display: flex;
+  background-color: #527158;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+  gap: 3px;
+  justify-content: space-evenly;
+}
+
+.contact {
+  padding-bottom: 5%;
+}
+
+.copyright {
+  padding: 3%;
+}
+
+/*About*/
+
+.contact-section {
+  background-color: #2a423a;
+  color: white;
 }
 
 /* ==========================================================================
@@ -449,11 +471,13 @@ footer p {
   }
 
   header .content-wrapper {
+    flex-direction: row;
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-left: 80px;
+    margin-right: 80px;
     padding: 0;
-    /* margin: 0; */
   }
 
   header nav {
@@ -461,7 +485,7 @@ footer p {
   }
 
   .hero-img {
-    width: 46%;
+    width: 40%;
     margin: 0;
   }
 
@@ -480,11 +504,13 @@ footer p {
 
   /* Aside */
   aside .content-wrapper {
-    margin: 50px 0;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     /* flex-flow: row wrap; */
     margin: 0 auto;
+    padding-top: 10%;
+    padding-bottom: 10%;
   }
 
   aside .content-wrapper div {
@@ -506,6 +532,13 @@ footer p {
     flex-basis: 50%;
   }
 
+  .features .content-wrapper h1 {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    width: 80%;
+    margin: 0 auto;
+  }
+
   .features {
     text-align: center;
   }
@@ -520,13 +553,33 @@ footer p {
   }
 
   /* Reviews */
-  .reviews article {
+  /* .reviews article {
     display: flex;
     justify-content: space-between;
+  } */
+
+  /* .reviews article div {
+    width: 49%;
+  } */
+  .reviews .content-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 10%;
+    padding-top: 10%;
   }
 
-  .reviews article div {
+  .reviews figure,
+  .review-comment {
     width: 49%;
+  }
+
+  .review-comment h2 {
+    margin-top: 0;
+  }
+
+  .reviews-container {
+    display: flex;
+    justify-content: space-between;
   }
 
   /* Footer */
@@ -543,10 +596,19 @@ footer p {
 
   footer .contact {
     margin-bottom: 0;
+    flex-direction: column;
   }
 
   footer .copyright {
+    text-align: center;
     width: 100%;
+    padding: 3%;
+  }
+  .social-icons {
+    text-align: center;
+  }
+  .icons {
+    gap: 25px;
   }
 
   /* ==========================================================================
@@ -564,15 +626,35 @@ footer p {
     width: 45%;
   }
 
+  .mission .content-wrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
+
   .map iframe {
     width: 100%;
-    height: 40%;
+    height: 100%;
   }
 
-  .contact-section .content-wrapper h2 {
+  .map figure {
+    padding-bottom: 45.5%;
+  }
+
+  .contact-section .content-wrapper {
     width: 80%;
+    margin: 0 auto;
   }
 
+  .contact-content {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  /* .contact-content div {
+    width: 50%;
+    margin: 0 auto;
+  } */
   .contact {
     display: flex;
     justify-content: space-between;
@@ -599,11 +681,11 @@ footer p {
 
 @media only screen and (min-width: 1200px) {
   .content-wrapper {
-    max-width: 960px;
+    /* max-width: 960px; */
   }
 
   /* Hero */
-  .hero-area h1 {
+  .hero h1 {
     width: 60%;
   }
 
@@ -612,9 +694,12 @@ footer p {
     justify-content: space-around;
   }
 
-  aside .content-wrapper .form-description,
-  aside .content-wrapper .form {
+  aside .content-wrapper div {
     width: 30%;
+  }
+
+  aside .content-wrapper div h3 {
+    font-size: 1.5rem;
   }
 
   /* Features */
@@ -623,13 +708,34 @@ footer p {
     width: 90%;
   }
 
+  .features .content-wrapper {
+    text-align: left;
+    font-size: 1.2rem;
+  }
+
   .features article {
     flex-basis: 33%;
   }
 
   /* Reviews */
-  .reviews article div {
+  .reviews .reviews-container div {
     width: 42%;
+  }
+
+  .reviews .content-wrapper {
+    padding-top: 5%;
+  }
+
+  .reviews h1 {
+    padding-bottom: 5%;
+  }
+
+  footer h3 {
+    font-size: 1.5rem;
+  }
+
+  footer .content-wrapper {
+    width: 50%;
   }
 
   /* ==========================================================================
@@ -641,9 +747,24 @@ footer p {
     width: 95%;
   }
 
+  .mission .content-wrapper,
+  .contact-section .content-wrapper {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .map figure {
+    width: 100%;
+    height: 40%;
+    padding-bottom: 35%;
+  }
   .map iframe {
     width: 100%;
-    height: 28%;
+    height: 100%;
+  }
+
+  .contact-section .content-wrapper h2 {
+    font-size: 3rem;
   }
 
   /* ==========================================================================
@@ -651,6 +772,11 @@ footer p {
   ========================================================================== */
   .faq h2 {
     width: 100%;
+  }
+
+  .faq .content-wrapper {
+    width: 80%;
+    margin: 0 auto;
   }
 }
 
