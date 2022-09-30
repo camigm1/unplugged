@@ -108,13 +108,17 @@ li {
   font-weight: bold;
 }
 
+h1 {
+}
 h2 {
   font-family: "Poppins", sans-serif;
+  font-weight: 500;
 }
 
 h3,
 h4 {
   font-family: "Poppins", sans-serif;
+  /* font-weight: 500; */
 }
 
 header,
@@ -214,7 +218,7 @@ header nav ul {
 }
 
 .features {
-  background-image: url("/Assets/rawpixel-800820-unsplash1.jpg");
+  background-image: url("../Assets/rawpixel-800820-unsplash1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -312,9 +316,10 @@ figure {
   padding-bottom: 5%;
 }
 
-.faq .content-wrapper {
+.faq .content-wrapper .faq-section {
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-between;
 }
 
 /**Footer**/
@@ -460,14 +465,10 @@ footer p {
    ========================================================================== */
 
 @media only screen and (min-width: 768px) {
-  .content-wrapper {
-    /* max-width: 640px; */
-  }
-
   /* Header */
   header {
     justify-content: space-around;
-    padding: 33px 0;
+    /* padding: 33px 0; */
   }
 
   header .content-wrapper {
@@ -680,10 +681,6 @@ footer p {
 }
 
 @media only screen and (min-width: 1200px) {
-  .content-wrapper {
-    /* max-width: 960px; */
-  }
-
   /* Hero */
   .hero h1 {
     width: 60%;
@@ -747,6 +744,11 @@ footer p {
     width: 95%;
   }
 
+  .mission h1 {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
   .mission .content-wrapper,
   .contact-section .content-wrapper {
     padding-top: 5%;
@@ -772,6 +774,11 @@ footer p {
   ========================================================================== */
   .faq h2 {
     width: 100%;
+  }
+
+  .faq h1 {
+    font-size: 3rem;
+    font-weight: 500;
   }
 
   .faq .content-wrapper {
