@@ -496,7 +496,7 @@ footer p {
     display: none;
   }
   /* Hero Area */
-  .hero {
+  .hero h1 {
     padding-left: 5%;
     font-size: 1.5rem;
   }
