@@ -132,11 +132,18 @@ footer {
   flex-flow: row wrap;
   background-image: url("../Assets/jake-melara-30679-unsplash.jpg");
   color: white;
-  min-height: 90vh;
+  min-height: 500px;
   color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.hero h1 {
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  font-size: 2.25em;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 header .content-wrapper {
@@ -495,10 +502,10 @@ footer p {
   .header-divider {
     display: none;
   }
-  /* Hero Area */
-  .hero h1 {
-    padding-left: 5%;
+
+  .hero {
     font-size: 1.5rem;
+    padding-left: 5%;
   }
 
   /* Aside */
@@ -679,9 +686,20 @@ footer p {
 }
 
 @media only screen and (min-width: 1200px) {
+  /*header*/
+  header .content-wrapper {
+    width: 70%;
+    margin: 0 auto;
+  }
+
   /* Hero */
   .hero h1 {
     width: 60%;
+  }
+
+  .hero .content-wrapper {
+    width: 80%;
+    margin: 0 auto;
   }
 
   /* Aside */
@@ -699,13 +717,18 @@ footer p {
 
   /* Features */
 
+  .features {
+    padding-bottom: 7%;
+  }
   .features h2 {
     width: 90%;
   }
 
   .features .content-wrapper {
+    width: 70%;
     text-align: left;
     font-size: 1.2rem;
+    margin: 0 auto;
   }
 
   .features article {
@@ -718,6 +741,7 @@ footer p {
   }
 
   .reviews .content-wrapper {
+    width: 60%;
     padding-top: 5%;
   }
 
@@ -726,7 +750,7 @@ footer p {
   }
 
   footer h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   footer .content-wrapper {
@@ -751,6 +775,7 @@ footer p {
   .contact-section .content-wrapper {
     padding-top: 5%;
     padding-bottom: 5%;
+    width: 60%;
   }
 
   .map figure {
@@ -780,7 +805,7 @@ footer p {
   }
 
   .faq .content-wrapper {
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
   }
 }
